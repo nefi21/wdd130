@@ -27,8 +27,12 @@ aside {
     color: #333;
     text-align: center;}
 main img {
-    width: 200px;
-    height: auto;}
+    width: 150px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
 footer {
     margin-top: 50px;
     border: 1px solid #000;
