@@ -1,40 +1,46 @@
-@import url(https://fonts.google.com/share?selection.family=Oswald:wght@200..700);
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 body {
-    font-family: var(--paragraph-font);
+    font-family: 'Poppins', sans-serif; 
     max-width: 960px;
     padding: 20px;
 }
+
 :root {
     --primary-color: #333333;
     --secondary-color: #48e5c2;
     --accent1-color: #fcfaf9;
     --accent2-color: #f3d3bd;
 
-    --heading-font: "freeman", serif;
-    --paragraph-font: "poppins", serif;
+    --heading-font: 'Oswald', sans-serif;
+    --paragraph-font: 'Poppins', sans-serif;
 
     --nav-background-color: #f8e7db;
     --nav-link-color: #48e5c2;
     --nav-hover-link-color: #fcfaf9;
-    --nav-hover-backgroung-color: #f6ddcc;
+    --nav-hover-background-color: #f6ddcc;
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
+
 header {
     padding: 20px;
     background-color: var(--accent1-color);
 }
+
 p {
     padding: 25px;
 }
+
 nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
 }
+
 nav a {
     display: block;
     color: var(--nav-link-color);
@@ -48,5 +54,5 @@ nav a:link, nav a:visited {
 
 nav a:hover {
     color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-backgroung-color);
+    background-color: var(--nav-hover-background-color);
 }
