@@ -9,7 +9,7 @@
     --nav-hover-background-color: #f6ddcc; 
 }
 
-/* Heading Styles */
+
 h1 {
     font-size: 40px; 
     font-weight: bold; 
@@ -78,11 +78,10 @@ footer {
 }
 
 .sociallinks {
-    margin-top: 20px; /* Add some space above the social links */
-}
+    margin-top: 20px; 
 
 .sociallinks a {
-    margin: 30px; /* Add some space between the social links */
+    margin: 30px; 
 }
 
 .sociallinks img {
