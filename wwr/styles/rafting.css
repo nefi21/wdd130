@@ -2,9 +2,7 @@
 
 :root {
     --primary-color: #333333; 
-    --secondary-color: #48e5c2; 
-    --accent1-color: #fcfaf9; 
-    --accent2-color: #f3d3bd; 
+    --secondary-color: #e4760f; 
     --nav-background-color: #f8e7db; 
     --nav-link-color: #48e5c2; 
     --nav-hover-link-color: #fcfaf9; 
@@ -13,13 +11,13 @@
 
 /* Heading Styles */
 h1 {
-    font-size: 32px; 
+    font-size: 40px; 
     font-weight: bold; 
     color: var(--primary-color); 
 }
 
 h2 {
-    font-size: 24px; 
+    font-size: 40px; 
     font-weight: bold; 
     color: var(--secondary-color); 
 }
@@ -55,7 +53,7 @@ p {
     left: 50%; 
     transform: translate(-50%, -50%); 
     color: white;
-    font-size: 2.5rem; 
+    font-size: 3rem; 
     text-align: center; 
     z-index: 1; 
 }
@@ -65,7 +63,7 @@ p {
     bottom: 20px; 
     left: 50%; 
     transform: translateX(-50%); 
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(79, 161, 255, 0.5); 
     padding: 20px; 
     color: white; 
     max-width: 80%; 
@@ -73,7 +71,7 @@ p {
 }
 
 footer {
-    background-color: #333; 
+    background-color: #ffffff; 
     color: white; 
     text-align: center; 
        padding: 20px 0; 
