@@ -21,21 +21,21 @@ h2 {
     color: var(--secondary-color); 
 }
 
-/* Paragraph Styles */
+
 p {
     font-size: 16px; 
     line-height: 1.5; 
     color: var(--primary-color); 
 }
 
-/* Resetting default margin and padding */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Hero section */
+
 .hero {
     position: relative; 
 }
