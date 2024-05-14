@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root {
+    --primary-color: #333333; 
+    --secondary-color: #48e5c2; 
+    --accent1-color: #fcfaf9; 
+    --accent2-color: #f3d3bd; 
+    --nav-background-color: #f8e7db; 
+    --nav-link-color: #48e5c2; 
+    --nav-hover-link-color: #fcfaf9; 
+    --nav-hover-background-color: #f6ddcc; 
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 32px; 
+    font-weight: bold; 
+    color: var(--primary-color); 
+}
+
+h2 {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: var(--secondary-color); 
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: var(--primary-color); 
+}
+
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero section */
+.hero {
+    position: relative; 
+}
+
+.hero img {
+    display: block; 
+    width: 100%; 
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute; 
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 2.5rem; 
+    text-align: center; 
+    z-index: 1; 
+}
+
+.hero article {
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px; 
+    color: white; 
+    max-width: 80%; 
+    z-index: 1; 
+}
+
+footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+       padding: 20px 0; 
+}
+
+.sociallinks {
+    margin-top: 20px; /* Add some space above the social links */
+}
+
+.sociallinks a {
+    margin: 30px; /* Add some space between the social links */
+}
+
+.sociallinks img {
+    width: 10px; 
+    height: auto;
+}
