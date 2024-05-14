@@ -9,7 +9,6 @@
     --nav-hover-background-color: #f6ddcc; 
 }
 
-
 h1 {
     font-size: 40px; 
     font-weight: bold; 
@@ -72,19 +71,20 @@ p {
 
 footer {
     background-color: #ffffff; 
-    color: white; 
+    color: #333333; /* Changed text color to contrast with background */
     text-align: center; 
-       padding: 20px 0; 
+    padding: 20px 0; 
 }
 
 .sociallinks {
     margin-top: 20px; 
+}
 
 .sociallinks a {
-    margin: 30px; 
+    margin: 30px; /* Added missing semicolon */
 }
 
 .sociallinks img {
-    width: 10px; 
+    width: 30px; /* Increased width for better visibility */
     height: auto;
 }
