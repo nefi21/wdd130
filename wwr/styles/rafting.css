@@ -10,9 +10,11 @@
 }
 
 h1 {
-    font-size: 40px; 
+    display:block;
+    font-size: 1.5rem; 
+    font-family: acme, arial, sans-serif;
     font-weight: bold; 
-    color: var(--primary-color); 
+ 
 }
 
 h2 {
@@ -23,7 +25,7 @@ h2 {
 
 
 p {
-    font-size: 16px; 
+    font-size: 22px; 
     line-height: 1.5; 
     color: var(--primary-color); 
 }
@@ -43,35 +45,78 @@ p {
 .hero img {
     display: block; 
     width: 100%; 
-    height: auto;
-}
+    height: 400px;
 
-.hero h1 {
-    position: absolute; 
-    top: 50%;
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: white;
-    font-size: 3rem; 
-    text-align: center; 
-    z-index: 1; 
+}
+.hero article img {
+    display: block; 
+    width: 20%; 
+    height: 50%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    max-width: 100%;
 }
 
 .hero article {
     position: absolute; 
-    bottom: 20px; 
+    bottom: 20%; 
+    top: 20%;
     left: 50%; 
     transform: translateX(-50%); 
     background-color: rgba(79, 161, 255, 0.5); 
     padding: 20px; 
-    color: white; 
+    color: black; 
     max-width: 80%; 
-    z-index: 1; 
+  
+}
+.hero h1 {
+    position: absolute; 
+    top: 12%;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white;
+    text-align: center; 
+}
+
+.history p {
+
+    justify-content: center;
+
+}
+.adventure {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20% 70% 10%;
+    padding: 2%;
+    align-items: center;
+}
+.adventure h2 {
+    grid-row-start: 1;
+    align-content: center;
+}
+.adventure img {
+    margin: 1rem;
+    width: 90%; 
+    height: 90%;
+    grid-row-start: 2;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.adventure p{
+    grid-row-start: 3;
+    display: block;
+    list-style: none;
 }
 
 footer {
+    display: block;
+    margin-right: 15px;
+    margin-bottom: 15px;
     background-color: #ffffff; 
-    color: #333333; /* Changed text color to contrast with background */
+    color: #333333;
     text-align: center; 
     padding: 20px 0; 
 }
@@ -81,10 +126,47 @@ footer {
 }
 
 .sociallinks a {
-    margin: 30px; /* Added missing semicolon */
+    margin: 30px; 
 }
 
 .sociallinks img {
-    width: 30px; /* Increased width for better visibility */
+    width: 30px; 
     height: auto;
 }
+header {
+    font-size: 1.5em;
+    margin: 1rem auto;
+    display: flex;
+    padding: 20px;
+    grid-template-columns: 200px 1fr 1fr;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    max-width: 800px;
+}
+
+.nav {
+    text-align: right;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation a {
+	display: block;
+	color: blue;
+	padding: 20px;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	color: tomato;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+section h2 {
+    text-align: center;
+}
+
