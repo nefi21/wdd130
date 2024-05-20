@@ -96,9 +96,9 @@ p {
     align-content: center;
 }
 .adventure img {
-    margin: 10px;
-    width: 200px; 
-    height: auto;
+    margin: 1rem;
+    width: 90%; 
+    height: 90%;
     grid-row-start: 2;
     flex-direction: row;
     flex-wrap: wrap;
