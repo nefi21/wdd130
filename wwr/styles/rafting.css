@@ -159,6 +159,8 @@ nav {
 }
 
 .history-images img {
+    width: 240px;
+    height: auto;
     border: 1px solid black;
     border-radius: 0.5rem;
 }
@@ -175,14 +177,14 @@ nav {
 
 .adventure-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    
 }
 
-
 .adventure-grid img {
-    width: 100%;
-    height: 100px;
+    width: 100px;
+    height: 120px;
     border-radius: 8px;
 }
 
