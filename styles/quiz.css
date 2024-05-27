@@ -10,17 +10,18 @@ body {
     font-family: Arial, sans-serif;
     font-size: 1.4rem;
     color: #333;
-    background-color: #f4f4f4;
+    background-color: white;
+    width: 100%;
 }
 
 .container {
-    max-width: 650px;
     margin: 0 auto;
     padding: 1.2rem;
+    width: 70%;
 }
 
 head {
-    margin: 0 auto;
+    margin: 0 ;
     width: 550px;
 }
 
@@ -29,14 +30,17 @@ h1 {
     font-size: 1.5rem;
     color: navy;
     text-align: center;
+    
+    
 }
 form {
     width: 650px;
     margin: 0 auto;
+    width: 70%;
     padding: 1.2rem;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     border-radius: 0.6rem;
-    background-color: #fff;
+    background-color: gainsboro;
     display: grid;
     gap: 1rem;
 }
@@ -44,12 +48,15 @@ form {
 fieldset {
     border: 1.5px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
+    
+    
 }
  
 legend {
     padding: 0.5rem;
     color: navy;
     font-size: 1.2em;
+    
 }
 
 label {
@@ -62,10 +69,12 @@ input, select, textarea {
     padding: 0.5rem;
     font-size: 1.2rem;
     font-family: 'Arial', sans-serif;
+    width: 100%;
 }
 
 button {
     margin: 1rem auto;
+    width: 90%;
     background-color: #5cb85c;
     color: white;
     border: none;
@@ -84,6 +93,7 @@ button:hover {
 }
 .question p{
     margin: 0;
+    
 }
 .question label {
     display: block;
