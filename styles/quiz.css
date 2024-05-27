@@ -20,21 +20,14 @@ body {
     width: 70%;
 }
 
-head {
-    margin: 0 ;
-    width: 550px;
-}
-
 h1 {
     margin: 1rem auto;
     font-size: 1.5rem;
     color: navy;
     text-align: center;
-    
-    
 }
+
 form {
-    width: 650px;
     margin: 0 auto;
     width: 70%;
     padding: 1.2rem;
@@ -48,21 +41,20 @@ form {
 fieldset {
     border: 1.5px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
-    
-    
 }
- 
+
 legend {
     padding: 0.5rem;
     color: navy;
     font-size: 1.2em;
-    
 }
 
 label {
     text-align: left;
     padding-right: 1.2rem;
     font-family: 'Arial', sans-serif;
+    display: block;
+    margin: 5px 0;
 }
 
 input, select, textarea {
@@ -91,11 +83,7 @@ button:hover {
 .question {
     margin-bottom: 20px;
 }
-.question p{
+
+.question p {
     margin: 0;
-    
-}
-.question label {
-    display: block;
-    margin: 5px 0;
 }
