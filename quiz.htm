@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nefi Huaman | Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <h1>HTML & CSS Quiz</h1>
+    <br>
+    <form action="/submit-quiz" method="post">
+
+        <div class="question">
+            <label for="q1">1. Fill in the blank: The &lt;h1&gt; tag is used for _____.</label>
+            <input type="text" id="q1" name="q1">
+        </div>
+
+        <div class="question">
+            <label for="q2">2. Provide a short description of what CSS is used for.</label>
+            <textarea id="q2" name="q2" rows="4" cols="50"></textarea>
+        </div>
+
+        <div class="question">
+            <label for="q3">3. Select the correct syntax for applying a CSS class to an HTML element.</label>
+            <select id="q3" name="q3">
+                <option value="" selected disabled>Choose One ...</option>
+                <option value="A">class="example"</option>
+                <option value="B">css="example"</option>
+                <option value="C">style="example"</option>
+            </select>
+        </div>
+
+        <div class="question">
+            <label for="q4">4. Enter a number between 1 and 10:</label>
+            <input type="number" id="q4" name="q4" min="1" max="10">
+        </div>
+        <br>
+        <button type="submit">Submit Quiz</button>
+    </form>
+</body>
+</html>
