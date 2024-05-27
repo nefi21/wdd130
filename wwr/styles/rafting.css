@@ -1,172 +1,217 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
 
 :root {
-    --primary-color: #333333; 
-    --secondary-color: #e4760f; 
-    --nav-background-color: #f8e7db; 
-    --nav-link-color: #48e5c2; 
-    --nav-hover-link-color: #fcfaf9; 
-    --nav-hover-background-color: #f6ddcc; 
-}
+    --primary-color: #222; /* Darker text color for better contrast */
+    --secondary-color: #48e5c2;
+    --accent1-color: #fcfaf9;
+    --accent2-color: #f3d3bd;
 
-h1 {
-    display:block;
-    font-size: 1.5rem; 
-    font-family: acme, arial, sans-serif;
-    font-weight: bold; 
- 
-}
+    --heading-font: 'Oswald', sans-serif;
+    --paragraph-font: 'Poppins', sans-serif;
 
-h2 {
-    font-size: 40px; 
-    font-weight: bold; 
-    color: var(--secondary-color); 
+    --nav-background-color: white;
+    --nav-link-color: #007bff; /* Adjusted link color for better contrast */
+    --nav-hover-link-color: tomato;
+    --nav-hover-background-color: #f6ddcc;
 }
 
 
-p {
-    font-size: 22px; 
-    line-height: 1.5; 
-    color: var(--primary-color); 
+header {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
+    background-color: var(--accent1-color);
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 0.1rem;
+    background-color: gainsboro;
 }
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.hero  {
+    margin: 1rem auto;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 0.1rem;
+    background-color: white;
 }
-
-
-.hero {
-    position: relative; 
-}
-
 .hero img {
-    display: block; 
-    width: 100%; 
-    height: 400px;
-
+    width: 100%;
+	height: 380px;
+	object-fit: cover;
 }
-.hero article img {
-    display: block; 
-    width: 20%; 
-    height: 50%;
-    float: left;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    max-width: 100%;
+
+.hero h1 {
+    position:absolute;
+    top: 10%;
+    right: 35%;
+	margin: 1rem;
+    font-size: 2rem;
+    font-family: 'Oswald', Arial, sans-serif;
+    color: white;
+    margin: 0;
 }
 
 .hero article {
-    position: absolute; 
-    bottom: 20%; 
-    top: 20%;
-    left: 50%; 
-    transform: translateX(-50%); 
-    background-color: rgba(79, 161, 255, 0.5); 
-    padding: 20px; 
-    color: black; 
-    max-width: 80%; 
-  
-}
-.hero h1 {
-    position: absolute; 
-    top: 12%;
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    color: white;
-    text-align: center; 
-}
-
-.history p {
-
-    justify-content: center;
-
-}
-.adventure {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 20% 70% 10%;
-    padding: 2%;
-    align-items: center;
-}
-.adventure h2 {
-    grid-row-start: 1;
-    align-content: center;
-}
-.adventure img {
-    margin: 1rem;
-    width: 90%; 
-    height: 90%;
-    grid-row-start: 2;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.adventure p{
-    grid-row-start: 3;
-    display: block;
-    list-style: none;
-}
-
-footer {
-    display: block;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    background-color: #ffffff; 
-    color: #333333;
-    text-align: center; 
-    padding: 20px 0; 
-}
-
-.sociallinks {
-    margin-top: 20px; 
-}
-
-.sociallinks a {
-    margin: 30px; 
-}
-
-.sociallinks img {
-    width: 30px; 
-    height: auto;
-}
-header {
-    font-size: 1.5em;
+   	background: radial-gradient(#eee, #4567aa);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background-color: white;
     margin: 1rem auto;
-    display: flex;
-    padding: 20px;
-    grid-template-columns: 200px 1fr 1fr;
+    position: absolute;
+    top: 30%;
+	right: 8%;
     align-items: center;
     border-bottom: 2px solid #ccc;
-    max-width: 800px;
+    width: 80%;
+    height: auto;
+    max-width: 1000px;
+    padding: 10px 20px;
 }
 
-.nav {
+
+.hero article img {
+    float: right;
+    width: 20%;
+	height: 30%;
+    margin-left: 10px;
+}
+
+
+.logo img {
+    margin: 0 0.25rem 0 1rem;
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+}
+
+nav {
     text-align: right;
+    background-color: var(--nav-background-color);
 }
 
 .navigation {
     display: flex;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+    border-radius: 0.1rem;
+}
+
+.navigation li {
+    flex: 1;
 }
 
 .navigation a {
-	display: block;
-	color: blue;
-	padding: 20px;
-	text-decoration: none;
+    display: block;
+    color: var(--nav-link-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .navigation a:hover {
-	color: tomato;
-	font-weight: 700;
-	text-decoration: underline;
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    font-weight: 700;
+    text-decoration: underline;
 }
 
-section h2 {
+/* History Section */
+
+
+.history {
+    position: relative;
+    background-color: var(--accent1-color);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 1px;
+    border: 1px solid black;
+}
+
+.history h2 {
+    position:absolute;
+    
+    top: 0;
+    right: 45%;
+}
+.history-grid {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+
+}
+
+.history-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.history-images img {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+/* Adventure Section */
+.adventure {
+    text-align: center;
+    background-color: var(--accent1-color);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 1px;
+    border: 1px solid black;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+
+.adventure-grid img {
+    width: 100%;
+    height: 155px;
+    border-radius: 8px;
+}
+
+.adventure-grid figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px 0;
+    font-weight: bold;
+    font-family: var(--heading-font);
+}
+
+footer {
+    display: grid;
+    height: auto;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 1px;
+    border: 1px solid black;
+    
+}
+
+footer p {
     text-align: center;
 }
 
+footer nav img {
+    align-items: end;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
