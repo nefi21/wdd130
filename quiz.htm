@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="styles/quiz.css">
 </head>
 <body>
-    <h1>✅HTML & CSS Quiz</h1>
+    <h1><span aria-hidden="true">✅</span> HTML & CSS Quiz</h1>
     <form action="/submit-quiz" method="post">
 
         <div class="question">
-            <label for="q1">1️⃣ Fill in the blank: The &lt;h1&gt; tag is used for ?</label>
-            <input type="text" id="q1" name="q1">
+            <label for="q1">1️⃣ Fill in the blank: The &lt;h1&gt; tag is used for?</label>
+            <input type="text" id="q1" name="q1" required>
         </div>
 
         <div class="question">
             <label for="q2">2️⃣ Provide a short description of what CSS is used for.</label>
-            <textarea id="q2" name="q2" rows="4" cols="50"></textarea>
+            <textarea id="q2" name="q2" rows="4" cols="50" required></textarea>
         </div>
 
         <div class="question">
             <label for="q3">3️⃣ Select the correct syntax for applying a CSS class to an HTML element.</label>
-            <select id="q3" name="q3">
+            <select id="q3" name="q3" required>
                 <option value="" selected disabled>Choose One ...</option>
                 <option value="A">class="example"</option>
                 <option value="B">css="example"</option>
@@ -32,7 +32,7 @@
 
         <div class="question">
             <label for="q4">4️⃣ How many types of CSS positioning are there?</label>
-            <input type="number" id="q4" name="q4" min="1" max="100">
+            <input type="number" id="q4" name="q4" min="1" max="100" required>
         </div>
         <br>
         <button type="submit">Submit Quiz</button>
