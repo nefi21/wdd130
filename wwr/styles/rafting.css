@@ -142,7 +142,6 @@ nav {
 
 .history h2 {
     position:absolute;
-    
     top: 0;
     right: 45%;
 }
@@ -182,8 +181,9 @@ nav {
     
 }
 
+
 .adventure-grid img {
-    width: 100px;
+    width: 80px;
     height: 120px;
     border-radius: 8px;
 }
@@ -216,4 +216,76 @@ footer nav img {
     width: 40px;
     height: 40px;
     border-radius: 5px;
+}
+
+/* employee section */
+
+.employee {
+    position: relative;
+    text-align: center;
+    background-color: var(--accent1-color);
+    padding: 20px;
+    margin: 20px 0;
+    height: 250px;
+ 
+}
+
+.employee-profile {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.employee-profile figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px 0;
+    font-weight: bold;
+    font-family: var(--heading-font);
+}
+
+form {
+    margin: 0 auto;
+    width: 90%;
+    padding: 1.2rem;
+    border: 1px solid black;
+    border-radius: 0.6rem;
+    background-color: gainsboro;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 0.5rem;
+}
+.contact-form {
+    position: relative;
+}
+.contact-message {
+    
+}
+button {    
+    margin: 1rem auto;
+    width: 40%;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: .85rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    align-content: end;
+}
+
+
+label {
+    text-align: left;
+    padding-right: 1.2rem;
+    font-family: 'Arial', sans-serif;
+    display: block;
+    margin: 5px 0;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.2rem;
 }
