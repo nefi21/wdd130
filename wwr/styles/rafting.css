@@ -105,8 +105,9 @@ footer nav img {
 .employee {
     position: relative;
     text-align: center;
-    background-color: var(--accent1-color);
-    padding: 20px;
+    font-size: 1rem;
+    padding-left: 6%;
+    background-color: white;
     margin: 20px 0;
     height: 250px;
  
@@ -128,15 +129,20 @@ footer nav img {
 }
 
 form {
+    position: relative;
     margin: 0 auto;
     width: 90%;
-    padding: 1.2rem;
+    padding: 1.5rem;
     border: 1px solid black;
     border-radius: 0.6rem;
     background-color: gainsboro;
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
     gap: 0.5rem;
+}
+.contact-name h2{
+    position:absolute;
+    top: 0%;
+    right: 35%;
+
 }
 .contact-form {
     position: relative;
@@ -165,9 +171,11 @@ label {
     font-family: 'Arial', sans-serif;
     display: block;
     margin: 5px 0;
+    
 }
 
 input, select, textarea {
     padding: 0.5rem;
     font-size: 1.2rem;
+    
 }
