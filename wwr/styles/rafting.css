@@ -137,22 +137,70 @@ form {
     border-radius: 0.6rem;
     background-color: gainsboro;
     gap: 0.5rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
 }
-.contact-name h2{
-    position:absolute;
-    top: 0%;
-    right: 35%;
-
+.contact-name h2 {
+    position: absolute;
+    top: 1%;
+    right: 30%;
+    font-size: 2rem;
+    padding: 10px;
+    margin: 0%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.contact-name {
+    align-items: center;
+    display: flex;
+    justify-content: start;
+    margin: 9%;
+    padding-top: 10px;
 }
 .contact-form {
     position: relative;
 }
+
+.contact-email {
+    position: absolute;
+    right: 18%;
+    top: 15%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    padding-top: 5.5px;
+}
+.contact-purpose {
+    position: absolute;
+    left: 7%;
+    top: 30%;
+    margin: 0%;
+
+}
 .contact-message {
-    
+    position: absolute;
+    left: 46%;
+    top: 32%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+}
+.contact-please {
+    position: absolute;
+    left: 46%;
+    top: 58%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
 }
 button {    
     margin: 1rem auto;
-    width: 40%;
+    width: 80%;
     background-color: darkblue;
     color: white;
     border: none;
@@ -160,8 +208,13 @@ button {
     padding: .85rem;
     font-size: 1.3rem;
     cursor: pointer;
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    align-items: center;
     display: flex;
-    align-content: end;
+    justify-content: center;
+    margin: 0%;
 }
 
 
@@ -171,8 +224,8 @@ label {
     font-family: 'Arial', sans-serif;
     display: block;
     margin: 5px 0;
-    
 }
+
 
 input, select, textarea {
     padding: 0.5rem;
