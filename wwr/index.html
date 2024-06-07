@@ -28,7 +28,9 @@
                 <h1>PRACTICE RAFTING WITH THE BEST TEAM</h1>
             </div>
             <div class="our-trips">
-                <h2>OUR TRIPS!</h2>
+                <h2>
+                    <li><a href="https://nefi21.github.io/wdd130/wwr/trips.html">Click here to take a look at our Trips</a></li>
+                </h2>
                 <div class="our-trips-grid">
                     <figure>
                         <img src="images/rafting1.jpg" alt="Beginning">
@@ -45,31 +47,22 @@
                 </div>
             </div>
         </main>
-        <h1><span aria-hidden="true">✅</span> Tell us what you are looking for?</h1>
-        <form action="/submit-quiz" method="post">
-
-            <div class="question">
-                <label for="q1">1️⃣ What is your name?</label>
-                <input type="text" id="q1" name="q1" required>
-            </div>
-
-            <div class="question">
-                <label for="q2">2️⃣ What is your phone number?</label>
-                <input type="text" id="q2" name="q2" required>
-            </div>
-
-            <div class="question">
-                <label for="q3">3️⃣ Choose what level you are interested in?</label>
-                <select id="q3" name="q3" required>
-                    <option value="" selected disabled>Choose One ...</option>
-                    <option value="A">Beginning</option>
-                    <option value="B">Intermediate</option>
-                    <option value="C">Advance</option>
-                </select>
-            </div>
-            <br>
-            <button type="submit">Submit Quiz</button>
-        </form>
+        <h1><span aria-hidden="true">✅</span>You can sign up here to our Newsletter</h1>
+        <section class="quiz-form">
+            <form class="form1" action="/submit-quiz" method="post">
+                <div class="question1">
+                    <label for="q1">1️⃣ What is your name?</label>
+                    <input type="text" id="q1" name="q1" placeholder="Write your name here." required>
+                </div>
+                <div class="question2">
+                    <label for="q2">2️⃣ What is your phone number?</label>
+                    <input type="text" id="q2" name="q2" placeholder="Write your phone number here." required>
+                </div>
+                <div>
+                    <button type="submit">Sign up</button>
+                </div>
+            </form>
+        </section>
         <footer>
             <p>Boise River</p>
             <p>©️2024 ⚓White Water Rafting ⚓ Nefi Huaman</p>

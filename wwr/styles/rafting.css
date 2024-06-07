@@ -160,8 +160,6 @@ nav {
     font-weight: bold;
     font-family: var(--heading-font);
 }
-/* form section */
-
 
 /*form section*/
 .container {
@@ -177,17 +175,50 @@ h1 {
     text-align: center;
 }
 
-form {
+.form1 {
+    position: relative;
     margin: 0 auto;
-    width: 70%;
-    padding: 1.2rem;
+    width: 100%%;
+    height: 200px;
+    padding: 1.5rem;
     border: 1px solid black;
     border-radius: 0.6rem;
     background-color: gainsboro;
+    gap: 0.5rem;
     display: grid;
-    gap: 1rem;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
 }
 
+.question1 {
+    position: relative;
+    width: 70%;
+    right: 0%;
+    top: 0%;
+    align-items:start;
+    display: flex;
+    justify-content: start;
+    margin: 0%;
+
+}
+.question1 label {
+    position: relative;
+    width: 40%;
+}
+.question2 {
+    position: relative;
+    width: 80%;
+    bottom: 320%;
+    align-items: start;
+    display: flex;
+    justify-content: start;
+ 
+}
+.question2 label {
+    position: relative;
+    top: 0%;
+    width: 60%;
+}
 fieldset {
     border: 1.5px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
@@ -198,6 +229,7 @@ legend {
     color: navy;
     font-size: 1.2em;
 }
+
 
 label {
     text-align: left;
@@ -214,9 +246,9 @@ input, select, textarea {
     width: 100%;
 }
 
-button {
+form button {
     margin: 1rem auto;
-    width: 90%;
+    width: 50%;
     background-color: #5cb85c;
     color: white;
     border: none;
@@ -224,14 +256,13 @@ button {
     padding: .85rem;
     font-size: 1.3rem;
     cursor: pointer;
+    position: absolute;
+    bottom: 7%;
+    right: 8%;
 }
 
 button:hover {
     background-color: darkgreen;
-}
-
-.question {
-    margin-bottom: 20px;
 }
 
 .question p {
@@ -288,7 +319,7 @@ footer nav img {
     font-family: var(--heading-font);
 }
 
-form {
+.form2 {
     position: relative;
     margin: 0 auto;
     width: 90%;
