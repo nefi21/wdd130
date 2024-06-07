@@ -566,6 +566,7 @@ input, select, textarea {
     gap: 10px;
     align-items: center;
     margin-top: 0;
+    font-size: 1rem;
 }
 
 .history-images img {
@@ -597,10 +598,11 @@ input, select, textarea {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
+    
 }
 
 .adventure-grid img {
-    width: 100%;
+    width: 130%;
     height: 30%;
     border-radius: 4px;
 }
@@ -611,4 +613,5 @@ input, select, textarea {
     padding: 10px 0;
     font-weight: bold;
     font-family: var(--heading-font);
+    font-size: 1.2rem;
 }
